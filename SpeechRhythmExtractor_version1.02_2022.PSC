@@ -47,7 +47,7 @@ form set the input parameters
  	## integer PhoneTier (under updating...)
 	integer VCtier 2
 	## integer SentenceTier (under updating...)
-	integer ChunkTier 4
+	integer ChunkTier 3
 	## integer ChunkTier 5
 endform
 
