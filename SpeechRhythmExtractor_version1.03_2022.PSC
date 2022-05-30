@@ -145,6 +145,9 @@ for y from 1 to numberOfFiles
         			to_freq = mid_freq * 2.5
         			h2 = Get maximum... 'from_freq' 'to_freq' None
         			h1h2 = h1 - h2
+				if h1h2 == 0
+        				h1h2 = undefined
+        			endif
         		fileappend 'fileOut2$' 'soundFile$' 'tab$' 'language$' 'tab$' 'sex$' 'tab$' 'chunk$' 'tab$' 'vowel$' 
         		...'tab$' 'h1h2:2' 'tab$' 'cpp:2' 'newline$'
 			
