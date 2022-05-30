@@ -1,7 +1,7 @@
 ###############################################################################################################
 # SpeechRhythmExtractor.PSC
 # Copyright (C) 2019, 2020, 2021, 2022 SILVA JR., Leonidas. & BARBOSA, Plinio Almeida. version 1.03
-# SpeechRhythmExtractor (version 1.8)
+# SpeechRhythmExtractor (version 1.03)
 # Script implemented by Leonidas SILVA JR. (State University of Paraiba / University of Campinas - Brazil) 
 # & Plinio A. BARBOSA (University of Campinas - Brazil). 
 # SpeechRhythmExtractor aims to build rhythmic multidimensional modellings taking vowel, consonant, 
