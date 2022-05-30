@@ -1,6 +1,6 @@
 ###############################################################################################################
 # SpeechRhythmExtractor.PSC
-# Copyright (C) 2019, 2020, 2021, 2022 SILVA JR., Leonidas. & BARBOSA, Plinio Almeida. version 1.8
+# Copyright (C) 2019, 2020, 2021, 2022 SILVA JR., Leonidas. & BARBOSA, Plinio Almeida. version 1.03
 # SpeechRhythmExtractor (version 1.8)
 # Script implemented by Leonidas SILVA JR. (State University of Paraiba / University of Campinas - Brazil) 
 # & Plinio A. BARBOSA (University of Campinas - Brazil). 
@@ -147,6 +147,12 @@ for y from 1 to numberOfFiles
         			h1h2 = h1 - h2
         		fileappend 'fileOut2$' 'soundFile$' 'tab$' 'language$' 'tab$' 'sex$' 'tab$' 'chunk$' 'tab$' 'vowel$' 
         		...'tab$' 'h1h2:2' 'tab$' 'cpp:2' 'newline$'
+			
+			select all
+        			minus TextGrid 'soundFile$'
+        			minus Sound 'soundFile$'
+        			minus Strings audioDataList
+        		Remove
         	endif
 		endfor
 	endif
@@ -1107,7 +1113,12 @@ fileappend 'fileOut$' 'filename$' 'tab$' 'language$' 'tab$' 'sex$' 'tab$' 'chunk
 ...'tab$' 'emphasis:2' 'tab$' 'sl_ltas_high:1' 'tab$' 'sl_ltas_medium:1' 'tab$' 'sl_ltas_low:1' 'tab$' 'cvint:2' 'tab$' 'jitter:2' 'tab$' 'shimmer:2' 'tab$' 'hnr:2' 
 ...'tab$' 'deltaPAUSE:2' 'tab$' 'meanDurPAUSE:2' 'tab$' 'pauserate:2' 'tab$' 'meandursil:2'
 ...'tab$' 'srate:2' 'tab$' 'artrate:2' 'newline$'
-
+			
+				select all
+        				minus TextGrid 'soundFile$'
+        				minus Sound 'soundFile$'
+        				minus Strings audioDataList
+        			Remove
 			endif
   		endif
  	endfor
