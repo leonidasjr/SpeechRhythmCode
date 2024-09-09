@@ -62,6 +62,9 @@ spectral_emphasis_threshold = 400
 
 Create Strings as file list... audioDataList *.wav
 numberOfFiles = Get number of strings
+writeInfoLine: "============"
+appendInfoLine: "Acoustic feature extraction processing. Please wait..."
+appendInfoLine: "============"
 
 # .txt file that will contain the metadata, target and prosodic features of the corpus
 fileOut$ = output_file$ + ".txt"
@@ -82,7 +85,7 @@ fileappend 'fileOut$' AUDIOFILE 'tab$' 'linguistic_target$' 'tab$' SEX 'tab$' CH
 ...'tab$' speech_rate 'tab$' artic_rate 
 ...'tab$' macR_Var 'tab$' rSD  'tab$' fSD 'tab$' pSD 'tab$' vSD 'tab$' macR_Freq 'tab$' macR_Freq_f0var 'newline$'
 
-if voice_quality_parameters = 1
+if voice_quality_parameters == 1
 	# .txt file that will contain the metadata, target and voice quality features of the corpus
 	fileOut2$ = output_file_VQ$ + ".txt"
 	filedelete 'fileOut2$'
@@ -1204,8 +1207,8 @@ select all
 Remove
 Read Table from tab-separated file... 'fileOut$'
 View & Edit
-if voice_quality_parameters = 1
+if voice_quality_parameters == 1
 	Read Table from tab-separated file... 'fileOut2$'
 	View & Edit
 endif
-
+writeInfoLine: "SpeechRhythmExtractor.praat executed successfully."
