@@ -1,6 +1,6 @@
 ###############################################################################################################
 # SpeechRhythmExtractor.praat
-# Copyright (C) 2019-2024. Silva Jr., Leonidas. & Barbosa, Plinio Almeida. version 1.2
+# Copyright (C) 2019-2025. Silva Jr., Leonidas. & Barbosa, Plinio Almeida. version 1.9
 # Script implemented by Leonidas Silva Jr. (State University of Paraiba / Universidade Estadual da Paraíba, Brazil) 
 # & Plinio A. Barvosa (University of Campinas / Universidade Estadual de Campinas, Brazil). 
 # SpeechRhythmExtractor aims to build a multidimensional modelling for speech prosody analysis taking vowel, consonant, 
@@ -14,8 +14,7 @@
 # Barbosa, P. ProsodyDescriptorExtractor. Computer program for Praat, 2020. 
 # URL: <https://github.com/pabarbosa/prosody-scripts>.
 #----------#----------#----------#### HOW TO CITE THIS SCRIPT ####----------#----------#----------#----------#
-# SILVA JR., L.; BARBOSA, P. A. (2023). SpeechRhythmExtractor (version 1.1). Computer program for Praat. 
-# Available in: <https://github.com/leonidasjr/SpeechRhythmCode>.
+# SILVA JR., L.; BARBOSA, P. A. (2019-2025). SpeechRhythmExtractor (version 1.90). [Computer program for Praat]. <https://github.com/leonidasjr/SpeechRhythmCode>.
 #----------#----------#----------#----------#----------#----------#----------#----------#----------#
 ###############################################################################################################
 
@@ -63,7 +62,7 @@ spectral_emphasis_threshold = 400
 Create Strings as file list... audioDataList *.wav
 numberOfFiles = Get number of strings
 writeInfoLine: "============"
-appendInfoLine: "Acoustic feature extraction processing. Please wait..."
+appendInfoLine: "Acoustic feature extraction processing..."
 appendInfoLine: "============"
 
 # .txt file that will contain the metadata, target and prosodic features of the corpus
@@ -1211,4 +1210,4 @@ if voice_quality_parameters == 1
 	Read Table from tab-separated file... 'fileOut2$'
 	View & Edit
 endif
-writeInfoLine: "SpeechRhythmExtractor.praat executed successfully."
+writeInfoLine: "Acoustic feature extraction ended."
