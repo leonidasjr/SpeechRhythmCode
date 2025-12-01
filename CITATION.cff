@@ -1,0 +1,12 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Leônidas
+  given-names: Silva Jr.
+orcid: https://orcid.org/0000-0002-3728-9851
+- family-names: Plínio
+  given-names: Barbosa
+title:Automatic Extraction of Prosodic-based Acoustic Descriptors
+DOI: 10.5281/zenodo.17753821
+version: Prosodic-Acoustic-Features
+date-released: 2025-11-28
